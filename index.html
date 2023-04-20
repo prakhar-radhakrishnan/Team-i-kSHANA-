@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="d-unit">
+        <div class="navbar">
+            <div class="logo">
+
+                <img src="images/kavach-logo-white.png" alt="Logo">
+            </div>
+            <div class="name">
+                <h1>i-KSHANA</h1>
+            </div>
+            <div class="nav-elements">
+                <div class="ELEMENTS">
+                    <a href="http://127.0.0.1:5502/page.html">HOME</a>
+                    <a href="http://127.0.0.1:5502/index.html">DETAILS</a>
+                </div>
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+        <h1 class="head">Deployed Units</h1>
+        <div class="unit-box">
+            <!-- <div class="tab active" id="unit1">D-Unit 1</div> -->
+            <!-- <div class="tab">D-Unit 2
+                
+            </div> -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">D-UNIT 1</a>
+                        <ul>
+                            <li><a href="#">Ram Deshpandey </a></li>
+                            <li><a href="#">Kanya Kumari</a></li>
+                            <li><a href="#">Himanshu Mishra</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">D-UNIT 2</a>
+                        <ul>
+                            <li><a href="#">Ram Deshpandey </a></li>
+                            <li><a href="#">Kanya Kumari</a></li>
+                            <li><a href="#">Himanshu Mishra</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">D-UNIT 3</a>
+                        <ul>
+                            <li><a href="#">Ram Deshpandey </a></li>
+                            <li><a href="#">Kanya Kumari</a></li>
+                            <li><a href="#">Himanshu Mishra</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">D-UNIT 4</a>
+                        <ul>
+                            <li><a href="#">Ram Deshpandey </a></li>
+                            <li><a href="#">Kanya Kumari</a></li>
+                            <li><a href="#">Himanshu Mishra</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">D-UNIT 5</a>
+                        <ul>
+                            <li><a href="#">Ram Deshpandey </a></li>
+                            <li><a href="#">Kanya Kumari</a></li>
+                            <li><a href="#">Himanshu Mishra</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">D-UNIT 6</a>
+                        <ul>
+                            <li><a href="#">Ram Deshpandey </a></li>
+                            <li><a href="#">Kanya Kumari</a></li>
+                            <li><a href="#">Himanshu Mishra</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+
+           
+
+        </div>
+        <div class="user-details">
+            <div class="user-profile">
+                <div class="user-img">
+                    <!-- <h1>fuck</h1> -->
+                    <img class="user-pic"
+                        src="https://media.istockphoto.com/id/1015381494/vector/policeman-vector-icon.jpg?s=612x612&w=0&k=20&c=tj5C1oF7SwB4KUvMlPS9ZqkcD0I4mni5iC2rAjWD_Ok="
+                        alt="User Profile Picture">
+                </div>
+
+                <!-- <h4 class="name"><b>Kanya Kumari</b></h4> -->
+                <div class="item-list">
+                    <h1 class="name">Ram Deshpandey</h1>
+                    <p class="stat2" id="warning-box">Active</p>
+                </div>
+
+                <div class="gear">
+                    <p>Gear Status</p>
+                </div>
+                <div class="gears-list">
+
+                    <div class="item-list">
+                        <p>Helmet</p>
+                        <p class="stat">Active</p>
+                    </div>
+                    <div class="item-list">
+                        <p>Armour</p>
+                        <p class="stat" id="inactive">Inactive</p>
+                    </div>
+                    <div class="item-list">
+                        <p>Gun</p>
+                        <p class="stat" id="warning-box">Active</p>
+                    </div>
+                    <div class="item-list">
+                        <p>Walkie-Talkie</p>
+                        <p class="stat">Active</p>
+                    </div>
+                </div>
+                <div class="gear">
+                    <p>Duty Status</p>
+                </div>
+
+
+                <div class="gears-list">
+
+                    <div class="item-list">
+                        <p>Check-in</p>
+                        <p class="stat" id="duty-stat">10:00 am</p>
+                    </div>
+                    <div class="item-list">
+                        <p>Check-Out</p>
+                        <p class="stat" id="duty-stat">05:00 pm</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mapid"></div>
+
+            <div class="graph">
+                <div class="graph-contain">
+                    <canvas id="LineChart"></canvas>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

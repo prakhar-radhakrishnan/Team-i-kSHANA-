@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navigation Bar Example</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+               
+                <img src="images/kavach-logo-white.png" alt="Logo">
+            </div>
+            <div class="name">
+                <h1>i-KSHANA</h1>
+            </div>
+            <div class="nav-elements">
+                <div class="ELEMENTS">
+                    <a href="http://127.0.0.1:5502/page.html" >HOME</a>
+                    <a href="http://127.0.0.1:5502/index.html" >DETAILS</a>
+                </div>
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+    
+        <div class="para">
+            <h1>Welcome Back , Please select or search</h1>
+            <p>This is a webapp which have functinallity of geo-fencing and it gives warning if any one of the personnel
+                goes out of fence.</p>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+        </div>
+    <!-- </div> -->
+    <div class="container">
+        <div class="card" onclick="location.href='http://127.0.0.1:5502/index.html'">
+            <img src="images/geofence.png" alt="Card Image">
+            <h3>Deployed Units</h3>
+            <p>Monitor the units and personnel
+            </p>
+           
+            <span class="stat-div">5/7 active</span>
+        </div>
+        <div class="card" onclick="location.href='page1.html';">
+            <img src="images/tid-implant.png" alt="Card Image">
+            <h3>RTP Implant</h3>
+            <p>Moniter the RTP Device placements
+            </p>
+            <!-- <div class="stat-div"> -->
+                <span class="stat-div">5/7 active</span>
+            
+            <!-- <button>Read More</button> -->
+        </div>
+
+        <div class="card" onclick="location.href='page2.html';">
+            <img src="images/asset.png" alt="Card Image">
+            <h3>Asset Tracking</h3>
+            <p>Monitor the assets of each personnel
+            </p>
+            <!-- <button>Read More</button> -->
+            <span class="stat-div" id="stat-div-inactive">1 inactive</span>
+        </div>
+
+        <div class="card" onclick="location.href='page3.html';">
+            <img src="images/logs.png" alt="Card Image">
+            <h3>Logs</h3>
+            <p>Refer to the personnel's detail 
+            </p>
+            <!-- <button>Read More</button> -->
+            <span class="stat-div">updated</span>
+        </div>
+    </div>
+    <div class="base-cards">
+        <div class="base-container">
+            <div class="base-card">
+              <img src="images/Deployed-location.png" id="base-card" alt="Image 1">
+              <div class="base-content" id="base-content">
+                <h2>Deployed Location</h2>
+                <p>Greater Noida</p>
+              </div>
+            </div>
+            <div class="base-card">
+              <img src="images/total active hours .png" alt="Image 2">
+              <div class="base-content">
+                <h2>Total active hours</h2>
+                <p><span class="base-stat">7.2 hours</span> </p>
+              </div>
+            </div>
+            <div class="base-card">
+                <img src="images/Asset reverification.png" alt="Image 2">
+                <div class="base-content">
+                  <h2>Asset Reverification</h2>
+                  <p><span class="base-stat">7 verified</span></p>
+                </div>
+              </div>
+              <div class="base-card">
+                <img src="images/battery lifecycel.png" alt="Image 2">
+                <div class="base-content">
+                  <h2>Device Battery status</h2>
+                  <p><span class="base-stat" id="die">1 device</span> about to die</p>
+                </div>
+              </div>
+          </div>
+          
+    </div>
+
+
+    <div class="base">
+        <!-- <h2>Your security is our Priority</h2> -->
+    <div class="base2">
+    <div><h2><span class="vande">VANDE</span> <span class="matram">MATRAM</span></h2></div>
+    </div>
+</body>
+
+</html>
